@@ -1,0 +1,21 @@
+{
+  "name": "sdv503-a3-hut-booking-13549870",
+  "version": "1.0.0",
+  "description": "Assessment 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Min-13-03/sdv503-a3-hut-booking-13549870.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Min-13-03/sdv503-a3-hut-booking-13549870/issues"
+  },
+  "homepage": "https://github.com/Min-13-03/sdv503-a3-hut-booking-13549870#readme"
+}
