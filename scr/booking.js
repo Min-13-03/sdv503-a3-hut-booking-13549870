@@ -30,3 +30,17 @@ export function canBook(hut, bookings, startDate, nights, partySize) {
   
   return { allowed: true };
 }  bEnd.setDate(bStart.getDate() + b.nights);  
+import { saveBookings } from "./data.js";
+
+export function cancelBooking(id, bookings) {
+  const index = bookings.findIndex(b => b.id === id);
+
+  if (index === -1) {
+    return "Booking ID not found"; // T8
+  }
+
+  bookings.splice(index, 1);
+  saveBookings(bookings);
+
+  return "Booking cancelled";
+}
