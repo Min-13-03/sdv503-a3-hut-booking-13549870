@@ -11,4 +11,22 @@ export function canBook(hut, bookings, startDate, nights, partySize) {
       .reduce((sum, b) => {
         const bStart = new Date(b.startDate);
         const bEnd = new Date(b.startDate);
-        bEnd.setDate(bStart.getDate() + b.nights);  
+    
+        // Check if booking overlaps this night
+        if (currentNight >= bStart && currentNight < bEnd) {
+          return sum + b.partySize;
+        }
+        return sum;
+      }, 0);
+
+    // Capacity decision (selection)
+    if (totalBooked + partySize > HUT_CAPACITY[hut]) {
+      return {
+        allowed: false,
+        message: `Booking exceeds capacity on ${currentNight.toDateString()}`
+      };
+    }
+  }
+  
+  return { allowed: true };
+}  bEnd.setDate(bStart.getDate() + b.nights);  
