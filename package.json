@@ -2,7 +2,8 @@
   "name": "sdv503-a3-hut-booking-13549870",
   "version": "1.0.0",
   "description": "Assessment 3",
-  "main": "index.js",
+  "main": "scr/index.js",
+  "types": "module",
   "scripts": {
     "start": "node scr/index.js"
   },
