@@ -1,7 +1,7 @@
 import { loadBookings } from "./data.js";
 import { createBooking, cancelBooking } from "./booking.js";
 import { occupancySummary } from "./summary.js";
-import { ask } from "./command.js";
+import { ask } from "./capacity.js";
 // Available huts (must match your capacity config)
 const huts = ["Alpine", "Forest", "Lake"];
 
