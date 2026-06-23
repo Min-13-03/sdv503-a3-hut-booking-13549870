@@ -6,5 +6,13 @@
     "startDate": "14-07-2026",
     "nights": 3,
     "partySize": 3
+  },
+  {
+    "id": "1781919009848",
+    "name": "Jane",
+    "hut": "Alpine",
+    "startDate": "2026-08-01",
+    "nights": 1,
+    "partySize": 2
   }
 ]
